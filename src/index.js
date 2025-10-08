@@ -1,10 +1,16 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
-import odinImage from "./images/odin.png";
+import Display from "./display.js";
 
-console.log(greeting);
 
-const image = document.createElement("img");
-image.src = odinImage;
-   
-document.body.appendChild(image);
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  new Display();
+});
+
+
+
+
+
+
+

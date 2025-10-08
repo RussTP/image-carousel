@@ -1,13 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --content-background:"";
-    --nav-background:"";
-    --button-hover:"";
-    --text-color:"";
-    --box-shadow:"";
+  --content-background: "";
+  --nav-background: "";
+  --button-hover: "";
+  --text-color: "";
+  --box-shadow: "";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30rem;
+
+
+}
+
+#image-container, #carousel-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  border-radius: 20px;
+  
+}
+
+#carousel-image {
+  border: 4px solid black;
+  box-shadow: 0 0 10px 3px rgb(83, 83, 83);
+}
+
+#nav-dot-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  border: 3px solid grey;
+}
+
+.dot.active {
+  background-color: black;
+  box-shadow: 0 0 10px 3px rgb(83, 83, 83);
+}
+
+button {
+  margin: 15px;
+  width: 7rem;
+  height: 5rem;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#previous-btn {
+  background-image: url('data:image/svg+xml,<svg fill="%23000000" width="80px" height="80px" viewBox="0 0 24 24"  data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M17,12,5,21V3Z" style="fill: %23db1a1a; stroke-width: 2;"></path><path id="primary" d="M17,12,5,21V3Z" style="fill: none; stroke: %23ff6a1a; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+#next-btn {
+  background-image: url('data:image/svg+xml,<svg fill="%23000000" width="80px" height="80px" viewBox="0 0 24 24" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M17,12,5,21V3Z" style="fill: %23db1a1a; stroke-width: 2;"></path><path id="primary" d="M17,12,5,21V3Z" style="fill: none; stroke: %23ff6a1a; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
 }

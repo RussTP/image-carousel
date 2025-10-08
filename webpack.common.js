@@ -1,22 +1,22 @@
- const path = require('path');
- const HtmlWebpackPlugin = require('html-webpack-plugin');
- const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
- module.exports = {
-   entry: {
-     app: './src/index.js',
-   },
+module.exports = {
+  entry: {
+    app: "./src/index.js",
+  },
   output: {
-     filename: '[name].bundle.js',
-     path: path.resolve(__dirname, 'dist'),
-     clean: true,
-   },
-   plugins: [
-     new HtmlWebpackPlugin({
-       title: 'Production',
-       template: "./src/template.html",
-     }),
-   /* new FaviconsWebpackPlugin({
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Production",
+      template: "./src/template.html",
+    }),
+    /* new FaviconsWebpackPlugin({
   logo: "./src/favicon/favicon.png",
   cache: true,
   inject: true,
@@ -40,7 +40,7 @@
   }
 })
 */
-],
+  ],
 
   module: {
     rules: [
@@ -54,12 +54,12 @@
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-        filename: 'assets/fonts/[name][ext]'
-      }
-    },
-        {
+          filename: "assets/fonts/[name][ext]",
+        },
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
